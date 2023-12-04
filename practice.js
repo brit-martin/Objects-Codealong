@@ -9,7 +9,7 @@ function personName() {
     age: 29,
     location: 'Orem, UT',
   };
-  return; // Code here
+  return (person.firstName)
 }
 
 /// ////////////// PROBLEM 2 ////////////////////
@@ -23,7 +23,7 @@ function personLocation() {
     age: 29,
     location: 'Orem, UT',
   };
-  return; // Code Here
+  return (person.location)
 }
 
 /// ////////////// PROBLEM 3 ////////////////////
@@ -31,18 +31,18 @@ function personLocation() {
 //Use dot notation to add a new property to the object backpack called frontPocket with the value equal to "compass".
 
 const backpack = {};
+backpack.frontPocket = "compass"
 
-// Code Here
 
 /// ////////////// PROBLEM 4 ////////////////////
 
 //Create a variable called userFirstName.  Assign it the value of the person's firstName property, using dot notation.
 
 const person = {};
-
+const userFirstName = {};
 person['firstName'] = 'sally';
+userFirstName.firstName 
 
-// Code Here
 
 /// ////////////// PROBLEM 5 ////////////////////
 
@@ -57,8 +57,12 @@ person['firstName'] = 'sally';
 // };
 
 function updateUser(user) {
-  // Code Here
+  user.name = "Ryan"
+  user.pwHash = "superSafe"
+  user.username = "ryan2020"
+  return user
 }
+
 
 /// ////////////// PROBLEM 6 ////////////////////
 
@@ -74,7 +78,7 @@ function updateUser(user) {
 // So updateProfile(userProfile, 'email', 'blah@yahoo.com') would update the email to 'blah@yahoo.com'
 
 function updateProfile(profile, property, value) {
-  // Code here
+   profile.email = "blah@yahoo.com"
   return profile;
 }
 
@@ -85,8 +89,9 @@ function updateProfile(profile, property, value) {
 // Return the updated object.
 
 function maxedOut(obj) {
-  // REPLACE THIS WITH YOUR CODE
-
+  for (const update in obj){
+    update.propertyValue = "max"
+  }
   return obj;
 }
 
@@ -103,7 +108,9 @@ const state = {
 // Loop through the given object. If a value is greater than 3,000,000 set it to 0.
 
 function stateLooper(obj) {
-  // REPLACE THIS WITH YOUR CODE
+  for (let i =0; i < state.lenght; i++){
+    if (i > 3000000 === 0)
+ }
   return obj;
 }
 
